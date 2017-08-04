@@ -58,7 +58,7 @@ This might ask you to choose an editor. Pick your favorite and proceed.
 Add the following entry to the file:
 
 ```
-@reboot /usr/bin/forever start /usr/lib/node_modules/verdaccio/bin/verdaccio
+@reboot /usr/bin/forever start --workingDir /home/verdaccio /usr/lib/node_modules/verdaccio/bin/verdaccio
 ```
 
 The locations may vary depending on your server setup. If you want to know where your files are you can use the 'which' command:
